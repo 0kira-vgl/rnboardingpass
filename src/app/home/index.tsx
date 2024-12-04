@@ -1,5 +1,6 @@
 import { Flight } from "@/components/flight";
 import { ImageBackground, Text, View } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 
 export function Home() {
   return (
@@ -17,9 +18,15 @@ export function Home() {
       </ImageBackground>
 
       <View className="bg-zinc-50 flex-1 w-full rounded-[22] overflow-hidden pb-6">
-        <View>
-          <View>
+        <View className="p-5">
+          <View className="flex-row justify-between items-center mb-12">
             <Flight label="São Paulo" value="GRU" />
+
+            <View className="items-center">
+              <Ionicons name="airplane-sharp" size={32} color="#000" />
+              <Text className="text-GRAY-800 text-sm">9h 45min</Text>
+            </View>
+
             <Flight label="New York" value="JKF" />
           </View>
         </View>
