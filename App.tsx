@@ -1,6 +1,6 @@
 import "@/styles/global.css";
-import { Home } from "@/app/home";
 import { StatusBar } from "react-native";
+import { Home } from "@/app/home";
 
 export default function App() {
   return (
